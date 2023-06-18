@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroidMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="titulo-site" href="#">
+            <img src="imagens/DROID.png" alt="DroidMart">
+          </a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="imagens/android.png" width="120" alt=""></a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="cadastro.html">Cadastrar Anúncio</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+        </ul>
+    </nav>
+    <body>
+        <h1>Cadastro de Produto</h1>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" placeholder="Exemplo: Zenfone 3 Max" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" placeholder="Exemplo: Octa Core , 2.5 GHZ" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" placeholder="Exemplo: R$ 1500,00" min="0" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="Telefone">Telefone:</label>
+                <input type="tel" id="preco" name="Telefone" placeholder="Exemplo: (00)2323-2323" min="0" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="imagem">Imagem do Produto:</label>
+                <input type="file" id="imagem"  name="imagem">
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <footer>
+            <p>© 2023 DroidMart. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
